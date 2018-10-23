@@ -1,0 +1,80 @@
+{
+    "name": "otp",
+    "displayName": "OTP",
+    "icon": "https://static.thenounproject.com/png/847891-200.png",
+    "componentType": "micro-app",
+    "appType": "ionic",
+    "ui": {
+        "appCode": {
+            "type": "element",
+            "tagName": "button",
+            "attributes": [
+                {
+                    "key": "studio-id",
+                    "value": null
+                },
+                {
+                    "key": "component-name",
+                    "value": "otp"
+                },
+                {
+                    "key": "ion-button",
+                    "value": null
+                }
+            ],
+            "children": [
+                {
+                    "type": "text",
+                    "content": "otp"
+                }
+            ]
+        },
+        "renderCode": {
+            "type": "element",
+            "tagName": "button",
+            "attributes": [
+                {
+                    "key": "studio-id",
+                    "value": null
+                },
+                {
+                    "key": "component-name",
+                    "value": "otp"
+                },
+                {
+                    "key": "class",
+                    "value": "button button-positive"
+                }
+            ],
+            "children": [
+                {
+                    "type": "text",
+                    "content": "Otp"
+                }
+            ]
+        }
+    },
+    "properties": [
+        {
+            "category": "values",
+            "source": [
+                "input"
+            ],
+            "html": [
+                {
+                    "label": "studio-id",
+                    "appCode": "attributes[0].value",
+                    "renderCode": "attributes[0].value"
+                }
+            ]
+        }
+    ],
+    "backend": {
+        "deploy-artifacts": [
+            {
+                "type": "mfp-adapter",
+                "adapter-file": "opt.adapter"
+            }
+        ]
+    }
+}
