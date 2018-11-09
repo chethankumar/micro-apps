@@ -1,0 +1,9 @@
+{
+    "version": "1",
+    "micro_apps": [
+        {
+            "name":"otp",
+            "folder":"otp"
+        }
+    ]
+}
